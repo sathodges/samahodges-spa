@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1",
+"start": "node server.js",
+"client": "npm run start --prefix client",
+"server": "nodemon server.js",
+"dev": "concurrently \"npm run client\" \"npm run server\""
+},
   "keywords": [],
   "author": "",
   "license": "MIT",
